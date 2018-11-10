@@ -1,0 +1,56 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+  integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+  crossorigin=""/>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css' rel='stylesheet' />
+  <script src='https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.js'></script>
+<style>
+  #mapid { height: 600px; }
+</style>
+
+</head>
+<body>
+  <div id="mapid"></div>
+  <!--<button onclick="getLocation()">Try It</button>-->
+  
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+   <script>
+
+    //var x = document.getElementById("demo");
+
+    var mymap = L.map('mapid').setView([12.9475, 77.5802], 50);
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}',
+    {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 18,
+      id: 'mapbox.streets',
+      accessToken: 'pk.eyJ1IjoieGFpb2RyZTA5NiIsImEiOiJjam5wcG9tdHkwMXZqM2xvZWxvbXIzazVnIn0.Mz_b1iR6Q9t7aksAv_C_Yw'
+    }).addTo(mymap);
+
+    var marker = L.marker([12.9475, 77.5802]).addTo(mymap);
+    marker.bindPopup("Lalbagh West Gate").openPopup();
+
+        // var theMarker = {}
+        // function onMapClick(e)
+        // {
+        //   lat = e.latlng.lat;
+        //   lon = e.latlng.lng;
+        //   if (theMarker != undefined)
+        //   {
+        //       mymap.removeLayer(theMarker);
+        //   };
+        //   theMarker = L.marker(e.latlng).addTo(mymap);
+        //   theMarker.bindPopup("Your restaurant").openPopup();
+        //
+        //   document.getElementById("latitude").value = lat;
+        //   document.getElementById("longitude").value = lon;
+        // }
+        //
+        // mymap.on('click', onMapClick);
+
+  </script>
+ </body>
+</html>

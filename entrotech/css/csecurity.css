@@ -1,0 +1,41 @@
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+.heading {
+    text-align: center;
+    padding: 5px 35px 0 35px;
+}
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+.push-spaces
+{
+height: 200px;
+}
+.center-block {
+  display: block;
+  text-align: center;
+  width:450px;
+  padding:10px;
+  margin-right: auto;
+  margin-left: auto;
+}
