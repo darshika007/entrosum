@@ -91,7 +91,7 @@ include("connect.php");
             <a class="nav-link" href="partners.php"> <i class="fas fa-handshake"></i>Partners</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="quries.php"> <i class="fas fa-comment"></i>Queries</a>
+            <a class="nav-link" href="queries.php"> <i class="fas fa-comment"></i>Queries</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="logout.php"> <i class="fas fa-power-off"></i>Logout</a>

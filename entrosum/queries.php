@@ -134,7 +134,7 @@ include('sessions_admin.php');
                       <td>
                          <button type="submit" name="button" class="btn btn-outline-success">Submit</button>
                          &nbsp
-                         <a href="qupdate2.php?PKid=<?php echo $row['id']; ?>&email=<?php echo $row['email']; ?>"><button type="button" name="button" class="btn btn-outline-danger">Ignore</button></a>
+                         <a href="qupdate2.php?PKid=<?php echo $row['id']; ?>"><button type="button" name="button" class="btn btn-outline-danger">Ignore</button></a>
                       </td>
 
                     <?php }else {?>
